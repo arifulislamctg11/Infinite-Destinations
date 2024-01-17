@@ -169,10 +169,32 @@ nav {
   padding-left: 10%;
 }
 
-.gallary-img-row {
-  display: flex;
-  gap: 1em;
-  justify-content: space-between;
+/* gallary img style goes here  */
+.gallary-img-container {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 16px; /* Adjust the gap as needed */
+}
+.gallary-item.col-7 {
+  grid-column: span 7;
+}
+
+.gallary-item.col-6 {
+  border: 1px solid #ccc;
+  text-align: center;
+  grid-column: span 6;
+}
+.gallary-item.col-5 {
+  grid-column: span 5;
+}
+.gallary-item.col-4 {
+  grid-column: span 4;
+}
+.gallary-item.col-3 {
+  grid-column: span 3;
+}
+.gallary-item.col-9 {
+  grid-column: span 9;
 }
 
 .gallary-item {
@@ -180,9 +202,37 @@ nav {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 1.5em;
 }
-
+.gallary-item img {
+  width: 100%;
+}
+.gallary-item {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 1em;
+}
+.gallary-item.maldives {
+  background-image: url("../Images/maldives.png");
+}
+.gallary-item.col-4.n-america {
+  background-image: url("../Images/north-america.png");
+}
+.gallary-item.srilanka {
+  background-image: url("../Images/srilanka.png");
+}
+.gallary-item.bangladesh {
+  background-image: url("../Images/bangladesh.png");
+}
+.gallary-item.kashmir {
+  background-image: url("../Images/kashmir.png");
+}
+.gallary-item.bandarban {
+  background-image: url("../Images/bandarban.png");
+}
+.gallary-item.indonesia {
+  background-image: url("../Images/indonesia.png");
+}
 .gallary-item > p {
   position: absolute;
   color: #fff;
@@ -191,9 +241,7 @@ nav {
   font-weight: 800;
   color: white;
 }
-.gallary-item > img {
-  max-height: 14em;
-}
+
 /* why choose us section style goes here  */
 .item-row {
   gap: 1em;
@@ -521,11 +569,37 @@ p.section-desc {
   }
 
   /* gallary */
-
-  .gallary-img-row {
-    flex-wrap: wrap;
-    justify-content: center;
+  .gallary-img-container {
+    grid-auto-rows: 15em;
   }
+  .gallary-item.col-3 {
+    grid-column: span 12;
+  }
+  .gallary-item.col-4 {
+    grid-column: span 12;
+  }
+  .gallary-item.col-5 {
+    grid-column: span 12;
+  }
+  .gallary-item.col-6 {
+    grid-column: span 12;
+  }
+  .gallary-item.col-7 {
+    grid-column: span 12;
+  }
+  .gallary-item.col-8 {
+    grid-column: span 12;
+  }
+  .gallary-item.col-9 {
+    grid-column: span 12;
+  }
+  .gallary-item.col-10 {
+    grid-column: span 12;
+  }
+  .gallary-item img {
+    width: 80%;
+  }
+
   /* why choose us section style for mobile goes here  */
   .item-row {
     flex-direction: column;
@@ -572,5 +646,10 @@ p.section-desc {
   }
   .newsletter-form-container form {
     width: 100%;
+  }
+  .newsletter-rectangle-img {
+    width: 40%;
+    right: 0;
+    bottom: 5%;
   }
 }
