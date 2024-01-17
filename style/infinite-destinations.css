@@ -416,6 +416,34 @@ nav {
   bottom: 9%;
 }
 
+/* footer style section goes here  */
+footer {
+  margin-top: 6.87em;
+  background: rgba(19, 19, 24, 0.05);
+}
+.footer-container {
+  padding-top: 6em;
+}
+.footer-container > * {
+  justify-content: center;
+  text-align: center;
+}
+.footer-container .co-name {
+  height: 2.5em;
+}
+p.section-desc {
+  text-align: center;
+}
+.footer-icon-container {
+  margin-bottom: 3.12em;
+}
+.footer .section-desc {
+  margin-bottom: 2em;
+}
+.copyright {
+  margin-top: 2em;
+  padding-bottom: 2em;
+}
 /* mobile screen style goes here ------------------------------mobile ----------- */
 
 @media (max-width: 640px) {
