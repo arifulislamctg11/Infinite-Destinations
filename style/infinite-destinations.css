@@ -238,6 +238,78 @@ nav {
   justify-content: center;
   margin-top: 1em;
 }
+/* deals and discount goes here  */
+
+.icon-container {
+  display: flex;
+  margin-bottom: 1.4em;
+  justify-content: space-between;
+}
+
+.deal-n-discount div:nth-child(2),
+.deal-n-discount div:nth-child(3),
+.deal-n-discount div:nth-child(4) {
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 1em;
+  justify-content: end;
+}
+
+.deal-n-discount div:nth-child(2) {
+  background-image: url("../Images/bg-1.png");
+  margin-bottom: 1.2em;
+}
+.deal-n-discount div:nth-child(3) {
+  background-image: url("../Images/bg-2.png");
+  justify-content: start;
+  margin-bottom: 1.2em;
+}
+.deal-n-discount div:nth-child(4) {
+  background-image: url("../Images/bg-1.png");
+  border-radius: 1em;
+}
+
+.deal-n-discount .section-row {
+  width: 100%;
+  max-height: 31.25em;
+  display: flex;
+}
+
+.deal-n-discount .section-item {
+  margin: 2em;
+  background-color: rgba(251, 255, 255, 0.8);
+  width: 21em;
+  justify-items: center;
+  padding: 3em;
+}
+.icon-container > p {
+  color: #5a5a5d;
+  font-size: 1em;
+  font-weight: 400;
+  margin-left: 0.1em;
+  margin-right: 0.1em;
+}
+
+.item-title {
+  margin-bottom: 1em;
+}
+.deal-n-discount .item-desc {
+  color: #5a5a5d;
+  font-size: 1em;
+  font-style: normal;
+  font-weight: 400;
+}
+.deal-n-discount .price {
+  margin-top: 0.8em;
+  margin-bottom: 0.8em;
+  color: var(--primary--color);
+  font-size: 20px;
+  font-weight: 800;
+}
+.btn-container {
+  text-align: center;
+  margin-top: 2em;
+}
 
 /* mobile screen style goes here ------------------------------mobile ----------- */
 
@@ -328,5 +400,14 @@ nav {
   }
   #best-price-guarantee {
     width: calc(100% - 16px);
+  }
+
+  /* deal and discount for mobile styles goes here  */
+
+  .deal-n-discount div:nth-child(2),
+  .deal-n-discount div:nth-child(3),
+  .deal-n-discount div:nth-child(4) {
+    justify-content: center;
+    padding-top: 12em;
   }
 }
