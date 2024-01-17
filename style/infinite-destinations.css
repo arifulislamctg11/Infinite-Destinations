@@ -311,6 +311,111 @@ nav {
   margin-top: 2em;
 }
 
+/* video section style goes here  */
+.video-section {
+  display: flex;
+  gap: 1em;
+}
+.video-title-container {
+  width: calc(50% - 0.5em);
+}
+
+.video-title-container li {
+  color: #131318;
+  font-size: 1em;
+  font-weight: 700;
+  margin-bottom: 1em;
+}
+
+.video-title-container ul {
+  padding-left: 0.8em;
+  padding-right: 0.8em;
+}
+.video-title-container .section-desc {
+  margin-bottom: 2em;
+}
+.video-title-container .section-title {
+  margin-bottom: 0.5em;
+}
+.video-title-container .section-title {
+  margin-bottom: 0.5em;
+}
+
+.video-container {
+  width: calc(50% - 0.5em);
+}
+.video-container iframe {
+  width: 100%;
+  border-radius: 1em;
+}
+
+/* news letter style goes here  */
+.newsletter {
+  display: flex;
+  gap: 1em;
+}
+.newsletter-form-container {
+  padding: 1.5em;
+  border-radius: 16px;
+  border: 1px solid #ff5400;
+  width: calc(35% - 0.5em);
+}
+.newsletter-form-container .item-desc {
+  color: #5a5a5d;
+  font-size: 16px;
+  font-weight: 400;
+  margin-bottom: 1em;
+}
+.newsletter-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+.newsletter-form > * {
+  width: 100%;
+  height: 3em;
+  border: 0;
+  border-radius: 8px;
+  margin-top: 0.5em;
+}
+.newsletter-form > input {
+  background: rgba(19, 19, 24, 0.05);
+}
+.newsletter-form > input::placeholder {
+  padding-left: 0.6em;
+}
+.newsletter-img-container {
+  background-image: url("../Images/newsletter-img.png");
+  position: relative;
+  width: calc(65% - 0.5em);
+  height: 25em;
+  background-position: center;
+  border-radius: 1em;
+  background-size: cover;
+}
+.newsletter-img-container img {
+  position: absolute;
+}
+
+.newsletter-bg-img {
+  width: 100%;
+}
+.newsletter-rectangle-img {
+  width: 40%;
+  right: 0;
+  bottom: 0;
+}
+.newsletter-save-upto-img {
+  width: 30%;
+  bottom: 12%;
+  left: 65%;
+}
+.newsletter-travel-com-img {
+  width: 20%;
+  left: 70%;
+  bottom: 9%;
+}
+
 /* mobile screen style goes here ------------------------------mobile ----------- */
 
 @media (max-width: 640px) {
@@ -409,5 +514,35 @@ nav {
   .deal-n-discount div:nth-child(4) {
     justify-content: center;
     padding-top: 12em;
+  }
+
+  /* video section styles goes here  */
+  .video-section {
+    display: flex;
+    flex-direction: column;
+  }
+  .video-title-container {
+    width: 100%;
+  }
+
+  .video-container {
+    width: 100%;
+  }
+  .video-container iframe {
+    height: 16em;
+  }
+  /* news letter style goes here  */
+  .newsletter {
+    flex-direction: column;
+  }
+
+  .newsletter-form-container {
+    width: 90%;
+  }
+  .newsletter-img-container {
+    width: 100%;
+  }
+  .newsletter-form-container form {
+    width: 100%;
   }
 }
